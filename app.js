@@ -1,7 +1,11 @@
 const btn = document.querySelector(".btn");
 const showbar = document.querySelector(".side-bar");
+const cancel = document.querySelector(".cancel");
 btn.addEventListener("click", () => {
-  showbar.classList.toggle("show-sidebar");
+  showbar.classList.add("show-sidebar");
+});
+cancel.addEventListener("click", () => {
+  showbar.classList.remove("show-sidebar");
 });
 // ================================ //
 const links = document.querySelectorAll(".nav-link li a");
@@ -24,3 +28,20 @@ links.forEach((link) => {
     });
   });
 });
+// ============================= //
+const slider = document.querySelector(".slider");
+let slideIndex = 0;
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slider.children.length;
+  updateSlider();
+}
+
+function updateSlider() {
+  const translateValue = -slideIndex * 100 + "%";
+  slider.style.transform = "translateX(" + translateValue + ")";
+}
+
+setInterval(nextSlide, 8000); // Change slide every 3 seconds (adjust as needed)
+// ==================================//
+
