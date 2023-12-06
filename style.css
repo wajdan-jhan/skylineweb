@@ -133,8 +133,7 @@ body {
 /* end of hero */
 /* about */
 .about {
-  background: white;
-}
+  background: white;}
 .animated-text {
   opacity: 0;
   transform: translateY(20px);
@@ -182,7 +181,7 @@ body {
   background-color: #f2f3f5;
 }
 .paras {
-  margin: 2rem 0;
+  margin: 1rem 0;
   color: #333333;
   display: flex;
   font-size: 1.5rem;
@@ -531,9 +530,11 @@ body {
   body {
     font-size: 15px;
   }
+
   .about {
     width: 100%;
     margin: 1rem 0;
+    overflow: hidden;
   }
   .title-text {
     margin: 0;
