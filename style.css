@@ -40,6 +40,8 @@ text-transform: capitalize;}
   padding: 10px 15px;
   border-radius: 10px;
   font-weight: bold;
+  text-transform: capitalize;
+
 }
 .nav-link li a:hover,
 .side-links li a:hover {
